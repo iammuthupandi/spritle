@@ -1,0 +1,13 @@
+<h1>Master activities</h1>
+
+{% if result %}
+    <ul>
+    {% for result in result %}
+<li><b>Input:</b> {{ result.expression }} <b>Result:</b> {{ result.result }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Calculations are available.</p>
+{% endif %}
+
+<p><a href="/">Logout</a></p>
